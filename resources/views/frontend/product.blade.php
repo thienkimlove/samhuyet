@@ -1,4 +1,4 @@
-@extends('frontend')
+﻿@extends('frontend')
 
 @section('content')
 
@@ -17,11 +17,11 @@
                         </li>
                         <li>
                             <a href="javascript:void(0)" rel="nofollow" data-type="tab" data-content="tab-research01" data-parent="news-type" data-reset="news-home" title="Nhận biết bao bì">
-                                Nhận biết bao bì</a>
+                                BẰNG CHỨNG KHOA HỌC</a>
                         </li>
                         <li>
                             <a href="javascript:void(0)" rel="nofollow" data-type="tab" data-content="tab-video" data-parent="news-type" data-reset="news-home" title="Hướng dẫn sử dụng">
-                                Hướng dẫn sử dụng
+                                CÂU HỎI THƯỜNG GẶP
                             </a>
                         </li>
                     </ul><!--//news-type-->

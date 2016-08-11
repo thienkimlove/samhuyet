@@ -216,6 +216,18 @@
         });
     };
 
+    /*equalHeight*/
+       equalHeight($('.box-news .item'));
+        function equalHeight(obj) {
+          if($(window).width() > 480 && obj.length>0){
+              obj.matchHeight();
+              $.fn.matchHeight._update();
+          } else {
+            obj.removeAttr('style');
+          }
+        }
+      //end
+
     var equalHeight = function(selector) {
         minheight = 0;
         $(selector).each(function() {

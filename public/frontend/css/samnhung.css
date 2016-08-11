@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*
 Theme Name: Theme name
 Theme URI: Theme URI
@@ -678,6 +678,16 @@ img {
   display: block;
 }
 
+
+#sidebar {
+  width: 300px;
+  position: absolute;
+}
+
+#sidebar.fixed {
+  position: fixed;
+  top: 20px;
+}
 .box-category {
   clear: both;
   padding-top: 15px;
@@ -2253,7 +2263,7 @@ img {
 }
 .box-news .item p {
   margin: 10px 10px 0 4px;
-  color: #494949;
+  color: #494949;min-height:75px;
 }
 .box-news .item .related-post {
   border-top: 1px dashed #ea2227;

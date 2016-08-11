@@ -9,8 +9,8 @@
             @if ($firstVideo = $featureVideos->shift())
                 <div class="data">
                     <iframe width="100%" height="250" src="{{$firstVideo->url}}" frameborder="0" allowfullscreen></iframe>
-                    <h3>
-                       {{$firstVideo->title}}
+                    <h3 class="titleVideo">
+                      <a href="{{url('video', $firstVideo->slug)}}">{{$firstVideo->title}}</a>
                     </h3>
                     <span class="view">{{$firstVideo->views}} lượt xem</span>
                 </div>
