@@ -3462,7 +3462,12 @@ img {
   .title-panel .title {
     float: none;
   }
-
+  #sidebar {
+    width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    top: 10px !important;
+  }
   .global-title.fll {
     float: none;
   }
