@@ -1,14 +1,6 @@
 $(document).ready(function() {
-    // check where the shoppingcart-div is
-    var offset = $('#sidebar').offset();
-    $(window).scroll(function () {
-        var scrollTop = $(window).scrollTop();
-        console.log(scrollTop);
-        // check the visible top of the browser
-        if (offset.top<scrollTop) {
-            $('#sidebar').addClass('fixed');
-        } else {
-            $('#sidebar').removeClass('fixed');
-        }
+    $('#sidebar').scrollToFixed({
+        marginTop: 100,
+        postFixed: function() { $(this).css('width', '300px'); },
     });
 });
