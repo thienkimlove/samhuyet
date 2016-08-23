@@ -23,7 +23,6 @@
             </a>
         </div>
     @endforeach
-    <div class="boxSocial">
         <div class="Social">
             <div class="fb-page" data-href="https://www.facebook.com/samnhungcuongluc.vn" data-width="300"
                  data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
@@ -33,7 +32,6 @@
                 </blockquote>
             </div>
         </div>
-    </div>
 
     @if ($rightNews && isset($page) && $page != 'phan-phoi' && $page != 'lien-he')
     <div class="boxHot cf" id="sidebar">
