@@ -23,9 +23,18 @@
             </a>
         </div>
     @endforeach
-	<div class="Social">
-<div class="fb-page" data-href="https://www.facebook.com/samnhungcuongluc.vn" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/samnhungcuongluc.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/samnhungcuongluc.vn">Sâm Nhung Cường Lực</a></blockquote></div>
+    <div class="boxSocial">
+        <div class="Social">
+            <div class="fb-page" data-href="https://www.facebook.com/samnhungcuongluc.vn" data-width="300"
+                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                 data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/samnhungcuongluc.vn" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/samnhungcuongluc.vn">Sâm Nhung Cường Lực</a>
+                </blockquote>
+            </div>
+        </div>
     </div>
+
     @if ($rightNews && isset($page) && $page != 'phan-phoi' && $page != 'lien-he')
     <div class="boxHot cf" id="sidebar">
         <h3 class="global-title"><a href="{{url('tin-tuc')}}">Tin nổi bật</a></h3>

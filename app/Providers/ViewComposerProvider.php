@@ -64,7 +64,7 @@ class ViewComposerProvider extends ServiceProvider
 
 
             if (!$agent->isMobile() && !$agent->isTablet()) {
-                $rightNews =  Post::publish()->latest('updated_at')->limit(6)->get();
+                $rightNews =  Post::publish()->latest('updated_at')->limit(4)->get();
             } else {
                 $rightNews = null;
             }
