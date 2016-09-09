@@ -49,7 +49,7 @@
                 <input type="text" name="ask_address" class="txt txt-add" placeholder="Địa chỉ"/>
                 <textarea name="question" class="txt txt-content" placeholder="Nội dung"></textarea>
                 <input type="submit" value="gửi đi" class="btn btn-submit"/>
-                <span class="mail-name">Chamsockhachhang@gmail.com</span>
+                <span class="mail-name">contact@tuelinh.com</span>
             {!! Form::close() !!}
         </div>
     </div>
