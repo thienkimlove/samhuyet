@@ -15,6 +15,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 
 class FrontendController extends Controller
 {
@@ -224,9 +225,18 @@ class FrontendController extends Controller
         $data = $request->all();
 
         if (isset($data['question'])) {
-            unset($data['_token']);
-            $data['title'] = $data['question'];
-            Question::create($data);
+
+            $content = "User : ".$data['ask_person'] . "\n";
+            $content .= "Address : ". $data['ask_address'] . "\n";
+            $content .= "Phone : ". $data['ask_phone'] . "\n";
+            $content .= "Question : ". $data['question'] . "\n";
+
+            Mail::send('mails.question', ['title' => 'Đặt câu hỏi với chuyên gia - Sâm Nhung', 'content' => $content], function ($message)
+            {
+                $message->from(env('MAIL_USERNAME'), 'Tue Linh');
+                $message->to(env('MAIL_USERNAME'));
+            });
+
         }
 
         return redirect('cau-hoi-thuong-gap');
