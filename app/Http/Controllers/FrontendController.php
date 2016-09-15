@@ -225,6 +225,7 @@ class FrontendController extends Controller
 
         if (isset($data['question'])) {
             unset($data['_token']);
+            $data['title'] = $data['question'];
             Question::create($data);
         }
 
