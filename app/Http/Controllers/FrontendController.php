@@ -234,7 +234,7 @@ class FrontendController extends Controller
 
         }
 
-        return redirect('cau-hoi-thuong-gap');
+        return redirect(url('/'));
     }
 
     public function tag($value)
