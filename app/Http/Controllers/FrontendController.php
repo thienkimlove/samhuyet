@@ -226,15 +226,10 @@ class FrontendController extends Controller
 
         if (isset($data['question'])) {
 
-            $content = "User : ".$data['ask_person'] . "\n";
-            $content .= "Address : ". $data['ask_address'] . "\n";
-            $content .= "Phone : ". $data['ask_phone'] . "\n";
-            $content .= "Question : ". $data['question'] . "\n";
-
-            Mail::send('mails.question', ['title' => 'Đặt câu hỏi với chuyên gia - Sâm Nhung', 'content' => $content], function ($message)
-            {
-                $message->from(env('MAIL_USERNAME'), 'Tue Linh');
-                $message->to('thienkimlove@gmail.com');
+            Mail::send('mails.question', ['data' => $data], function ($m)  {
+                $m->from(env('MAIL_USERNAME'), 'Tue Linh')
+                    ->to('thienkimlove@gmail.com')
+                    ->subject('Đặt câu hỏi với chuyên gia!');
             });
 
         }

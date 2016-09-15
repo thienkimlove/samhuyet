@@ -1,7 +1,12 @@
-<html>
-<head></head>
-<body>
-<h1>{{$title}}</h1>
-<p>{{$content}}</p>
-</body>
-</html>
+<p>
+    Người hỏi : {{$data['ask_person']}}
+</p>
+<p>
+    Địa chỉ : {{$data['ask_address']}}
+</p>
+<p>
+    Số điện thoại : {{$data['ask_phone']}}
+</p>
+<p>
+    Nội dung câu hỏi : {{$data['question']}}
+</p>
