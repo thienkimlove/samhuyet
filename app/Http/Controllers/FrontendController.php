@@ -225,7 +225,7 @@ class FrontendController extends Controller
 
         if (isset($data['question'])) {
             unset($data['_token']);
-            Question::insert($data);
+            Question::create($data);
         }
 
         return redirect('cau-hoi-thuong-gap');
