@@ -228,7 +228,7 @@ class FrontendController extends Controller
 
             Mail::send('mails.question', ['data' => $data], function ($m)  {
                 $m->from(env('MAIL_USERNAME'), 'Tue Linh')
-                    ->to('thienkimlove@gmail.com')
+                    ->to(env('MAIL_USERNAME'))
                     ->subject('Đặt câu hỏi với chuyên gia!');
             });
 
