@@ -1482,7 +1482,9 @@ img {
 .layout-home .col-right .box-consult {
   margin-top: 0;
 }
-
+.layout-home .col-right .Social {
+  height: 220px;
+}
 .boxList .thumbs {
   float: left;
   width: 45%;
